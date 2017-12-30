@@ -17,16 +17,16 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length === 0){
+  if (getCart().length === 0){
     console.log("Your shopping cart is empty.")
     return
   }
-  var cartarray = Object.keys(cart)
+  var cartarray = Object.keys(getCart())
   var string = `In your cart, you have`
-  for (let i = 0;i<cart.length;i++){
+  for (let i = 0;i<getCart().length;i++){
     if (i === 0){
       string += ` ${cartarray[i]} at $${cart[cartarray[i]]}`
-    }else if (i < cart.length-1){
+    }else if (i < getCart().length-1){
       string +=`, ${cartarray[i]} at $${cart[cartarray[i]]}`
     }
     else{
