@@ -57,7 +57,7 @@ function removeFromCart(item) {
       var index = cart[i]
     }
   }
-  if (wegood){
+  if (wegood === true){
     delete cart[i]
     return cart
   } else{
