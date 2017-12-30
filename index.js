@@ -68,8 +68,13 @@ function placeOrder(cardNumber) {
     var moola = total()
     console.log(`Your total cost is $${moola}, which will be charged to the card ${cardNumber}.`)
     var cartarray = Object.keys(cart)
-    for (let i = 0;i<cart.length;i++){
+    var i = 0
+    while (cart.length>0){
       removeFromCart(cartarray[i])
+      i += 1
+    }
+    //for (let i = 0;i<cart.length;i++){
+    //  removeFromCart(cartarray[i])
     }
     return cart
   }
