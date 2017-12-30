@@ -55,8 +55,8 @@ function removeFromCart(item) {
   var index = 0
   for (let i = 0; i < getCart().length; i++){
     if (cart[i].hasOwnProperty(item)){
-      wegood = true
-      index = i
+      var wegood = true
+      var index = i
     }
   }
   if (wegood){
