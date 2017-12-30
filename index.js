@@ -20,7 +20,7 @@ function viewCart() {
   if (getCart().length === 0){
     console.log("Your shopping cart is empty.")
     return
-  }
+  } else{
   var cartarray = Object.keys(getCart())
   var string = `In your cart, you have`
   for (let i = 0;i<getCart().length;i++){
@@ -35,6 +35,7 @@ function viewCart() {
   }
   console.log(string)
   return
+}
 }
 
 function total() {
