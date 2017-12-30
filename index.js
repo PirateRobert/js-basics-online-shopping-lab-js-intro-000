@@ -39,6 +39,7 @@ function viewCart() {
 
 function total() {
   var cartarray = Object.keys(cart)
+  console.log(cartarray)
   var moola = 0
   for (let i = 0; i<cartarray.length;i++){
     var findem = cart[cartarray[i]]
