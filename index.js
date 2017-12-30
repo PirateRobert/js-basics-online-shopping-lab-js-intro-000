@@ -51,6 +51,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var wegood = false
   for (let i = 0; i < getCart().length; i++){
     if (cart[i].hasOwnProperty(item)){
       wegood = true
