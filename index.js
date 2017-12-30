@@ -44,7 +44,7 @@ function viewCart() {
 
 function total() {
   var moola = 0;
-  for (i = 0; i < getCart().length; i++){
+  for (i = 0; i < getCart().length; i++) {
     moola += parseInt(getCart()[i][Object.keys(getCart()[i])[0]]);
   return moola;
   }
