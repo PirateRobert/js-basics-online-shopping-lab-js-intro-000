@@ -71,8 +71,5 @@ function placeOrder(cardNumber) {
     while (cart.length>0){
       removeFromCart(cartarray[0])
     }
-    //for (let i = 0;i<cart.length;i++){
-    //  removeFromCart(cartarray[i])
-    }
     return cart
-}
+}}
