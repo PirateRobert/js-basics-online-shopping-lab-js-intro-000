@@ -26,12 +26,12 @@ function viewCart() {
   var string = `In your cart, you have`
   for (let i = 0;i<cart.length;i++){
     if (i === 0){
-      string = string + ` ${cartarray[i]} at $${cart[cartarray[i]]}`
+      string += ` ${cartarray[i]} at $${cart[cartarray[i]]}`
     }else if (i < cart.length-1){
-      string = string + `, ${cartarray[i]} at $${cart[cartarray[i]]}`
+      string +=`, ${cartarray[i]} at $${cart[cartarray[i]]}`
     }
     else{
-      string = string + `, and ${cartarray[i]} at $${cart[cartarray[i]]}.`
+      string += `, and ${cartarray[i]} at $${cart[cartarray[i]]}.`
     }
   }
   console.log(string)
@@ -40,8 +40,9 @@ function viewCart() {
 
 function total() {
   var cartarray = Object.keys(cart)
+  var moola = 0
   for (let i = 0; i<cartarray.length;i++){
-
+    
   }
 }
 
