@@ -23,14 +23,13 @@ function viewCart() {
   } else{
   var string = `In your cart, you have`
   for (let i = 0;i<getCart().length;i++){
-    var cartarray = Object.keys(getCart()[i])
     if (i === 0){
-      string += ` ${cartarray[0]} at $${cart[cartarray[0]]}`
+      string += ` ${Object.keys(getCart()[i])[0]} at $${cart[Object.keys(getCart()[i])[0]]}`
     }else if (i < getCart().length-1){
-      string +=`, ${cartarray[0]} at $${cart[cartarray[0]]}`
+      string +=`, ${Object.keys(getCart()[i])[0]} at $${cart[Object.keys(getCart()[i])[0]]}`
     }
     else{
-      string += `, and ${cartarray[0]} at $${cart[cartarray[0]]}.`
+      string += `, and ${Object.keys(getCart()[i])[0]} at $${cart[Object.keys(getCart()[i])[0]]}.`
     }
   }
   console.log(string)
