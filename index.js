@@ -51,21 +51,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var wegood = false
-  var index = 0
   for (let i = 0; i < getCart().length; i++){
     if (cart[i].hasOwnProperty(item)){
-      wegood = true
-      index = i
-    }
-  }
-  if (wegood === true){
-    delete cart[index]
-    return cart
-  } else{
+      delete cart[i]
+      return cart
+  }} 
      console.log("That item is not in your cart.")
      return cart
-  }
 }
 
 function placeOrder(cardNumber) {
