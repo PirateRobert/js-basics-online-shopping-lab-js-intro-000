@@ -34,6 +34,8 @@ function viewCart() {
       string = string + `, and ${cartarray[i]} at $${cart[cartarray[i]]}.`
     }
   }
+  console.log(string)
+  return
 }
 
 function total() {
