@@ -44,11 +44,12 @@ function total() {
   for (let i = 0; i<cartarray.length;i++){
     var findem = cart[cartarray[i]]
     moola += parseInt(findem)
+  return moola
   }
 }
 
 function removeFromCart(item) {
-  // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
