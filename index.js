@@ -75,5 +75,4 @@ function placeOrder(cardNumber) {
     //  removeFromCart(cartarray[i])
     }
     return cart
-  }
 }
