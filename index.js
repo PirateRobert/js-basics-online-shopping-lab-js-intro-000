@@ -28,7 +28,7 @@ function viewCart() {
     if (i === 0){
       string = string + ` ${cartarray[i]} at ${cart[cartarray[i]]}`
     }else if (i < cart.length-1){
-
+      string = string + `, ${cartarray[i]} at ${cart[cartarray[i]]}`
     }
   }
 }
