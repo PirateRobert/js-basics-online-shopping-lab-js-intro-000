@@ -38,9 +38,8 @@ function viewCart() {
 }
 
 function total() {
-  var cartarray = Object.keys(getCart())
   var moola = 0
-  for (let i = 0; i<cartarray.length;i++){
+  for (let i = 0; i<cart.length;i++){
     var num = parseInt(getCart()[cartarray[i]])
     moola += num
   return moola
