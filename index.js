@@ -54,12 +54,12 @@ function removeFromCart(item) {
   var wegood = false
   var index = 0
   for (let i = 0; i < getCart().length; i++){
-    if cart[i].hasOwnProperty(item){
+    if (cart[i].hasOwnProperty(item)){
       wegood = true
       index = i
     }
   }
-  if wegood{
+  if (wegood){
     delete cart[i]
     return cart
   } else{
