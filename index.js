@@ -61,6 +61,7 @@ function removeFromCart(item) {
   }
   if wegood{
     delete cart[i]
+    return cart
   } else{
      console.log("That item is not in your cart.")
      return cart
