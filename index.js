@@ -68,6 +68,7 @@ function placeOrder(cardNumber) {
     var cartarray = Object.keys(cart)
     for (let i = 0;i<cartarray.length;i++){
       removeFromCart(cartarray[i])
+    return cart
     }
   }
 }
