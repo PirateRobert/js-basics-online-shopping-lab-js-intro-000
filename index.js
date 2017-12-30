@@ -30,6 +30,9 @@ function viewCart() {
     }else if (i < cart.length-1){
       string = string + `, ${cartarray[i]} at $${cart[cartarray[i]]}`
     }
+    else{
+      string = string + `, and ${cartarray[i]} at $${cart[cartarray[i]]}.`
+    }
   }
 }
 
