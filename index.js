@@ -51,7 +51,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (i = 0; i < getCart().length; i++){
+  for (let i = 0; i < getCart().length; i++){
     if (cart[i].hasOwnProperty(item)){
       var wegood = true
       var index = cart[i]
