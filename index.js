@@ -30,9 +30,10 @@ function viewCart() {
       string +=`, ${cartarray[0]} at $${cart[i][cartarray[0]]}`
     }
     else{
-      string += `, and ${cartarray[0]} at $${cart[i][cartarray[0]]}.`
+      string += `, and ${cartarray[0]} at $${cart[i][cartarray[0]]}`
     }
   }
+  string += "."
   console.log(string)
   return
 }
