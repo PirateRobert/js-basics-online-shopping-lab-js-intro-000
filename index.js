@@ -42,7 +42,8 @@ function total() {
   var cartarray = Object.keys(cart)
   var moola = 0
   for (let i = 0; i<cartarray.length;i++){
-    
+    var findem = cart[cartarray[i]]
+    moola += parseInt(findem)
   }
 }
 
