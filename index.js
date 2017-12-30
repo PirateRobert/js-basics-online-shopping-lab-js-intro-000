@@ -22,11 +22,12 @@ function viewCart() {
     console.log("Your shopping cart is empty.")
     return
   }
+  var cartarray = Object.keys(cart)
   var string = `In your cart, you have`
   for (let i = 0;i<cart.length;i++){
     if (i === 0){
       string = string + ` ${} at ${}`
-    }else if (){
+    }else if (i < cart.length-1){
 
     }
   }
