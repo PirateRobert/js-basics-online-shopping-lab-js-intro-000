@@ -39,7 +39,7 @@ function viewCart() {
 
 function total() {
   var moola = 0
-  for (let i = 0; i < cart.length;i++){
+  for (let i = 0; i <= cart.length;i++){
     moola = moola + parseInt(getCart()[i][Object.keys(getCart()[i])[0]])
   return moola
   }
