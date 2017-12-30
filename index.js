@@ -29,6 +29,9 @@ function viewCart() {
     }else if (i < getCart().length-1){
       string +=`, ${cartarray[0]} at $${cart[i][cartarray[0]]}`
     }
+    else if (getCart().length == 2){
+      string += ` and ${cartarray[0]} at $${cart[i][cartarray[0]]}`
+    }
     else{
       string += `, and ${cartarray[0]} at $${cart[i][cartarray[0]]}`
     }
